@@ -1,0 +1,125 @@
+# Sales Orders Analysis – Power BI
+
+## Business Problem
+The sales management team needs a comprehensive dashboard to analyze sales
+performance, product trends, and territory contribution. The objective is to
+provide clear insights into total sales, quantities sold, average order value,
+and performance across product categories and regions to support data-driven
+decision making.
+
+---
+
+## Dataset Overview
+The dataset represents sales order transactions and includes order-level,
+product-level, customer-level, and financial data.
+
+Main data source:
+- Sales.xlsx
+
+The dataset contains both fact and dimension data and follows a structured
+format suitable for analytical reporting.
+
+---
+
+## Data Model
+The data model follows a **Star Schema** design.
+
+### Fact Table
+**Sales Data**
+- OrderDetailID
+- OrderID
+- OrderDate
+- ProductID
+- CustomerID
+- TerritoryID
+- ShipMethodID
+- StatusID
+- OrderQty
+- UnitPrice
+- LineTotal
+- TaxAmt
+- Freight
+- OnlineOrderFlag
+
+### Dimension Tables
+- **DM_Product** (Product, ProductCategory, ProductSubCategory)
+- **DM_Customer** (Customer Name, Address, Phone)
+- **DM_Territory** (Territory, TerritoryGroup)
+- **DM_Date** (Year, Quarter, Month, Day)
+- **DM_ShipMethod** (ShipMethod)
+- **DM_Status** (Order Status)
+
+Relationships are one-to-many with single-direction filtering, optimized for
+performance and clarity.
+
+---
+
+## Key KPIs
+- **Total Sales**
+- **Average Order Value**
+- **Total Quantity Sold**
+
+These KPIs provide a high-level overview of sales performance.
+
+---
+
+## Dashboard Pages & Visuals
+
+### 1. Sales Overview
+- Total Sales KPI
+- Average Order Value KPI
+- Total Quantity Sold KPI
+- Total Sales by Product Category
+- Total Sales by Territory
+
+### 2. Time Analysis
+- Total Sales by Month
+- Trend analysis to identify seasonality and performance changes over time
+
+### 3. Geographic Analysis
+- Sales by Territory Group (Map Visualization)
+- Regional contribution to overall sales performance
+
+### 4. Interactive Filters
+- Product Category
+- Territory
+- Year
+
+All visuals are fully interactive and respond dynamically to slicer selections.
+
+---
+
+## Data Cleaning & Preparation
+- Verified uniqueness of primary keys
+- Ensured no missing foreign keys in the fact table
+- Validated numeric fields for consistency
+- Standardized category and territory naming
+- Created a dedicated date dimension for time intelligence
+
+---
+
+## Tools & Technologies Used
+- Power BI
+- Power Query
+- DAX
+- Data Modeling (Star Schema)
+- Interactive Visual Design
+
+---
+
+## Key Insights
+- Sales are highly concentrated in specific product categories.
+- Certain territories consistently outperform others in revenue generation.
+- Monthly sales trends reveal clear seasonality patterns.
+- Average order value varies significantly across regions.
+
+---
+
+## Portfolio Value
+This project demonstrates:
+- Strong understanding of dimensional modeling
+- KPI-driven dashboard design
+- Business-focused storytelling
+- Clean and scalable Power BI implementation
+
+It is designed for executive-level sales performance analysis.
