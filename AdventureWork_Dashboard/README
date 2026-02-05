@@ -1,0 +1,156 @@
+##Sales Analysis Dashboard (Power BI)
+ ##Project Overview
+
+This project presents an interactive Power BI dashboard for analyzing sales performance using the AdventureWorks dataset.
+The dashboard provides deep insights into sales, customers, products, territories, and returns, following a star schema data model and best practices in Power BI.
+
+## Objectives
+
+Analyze total sales, quantities, and returns.
+
+Understand customer behavior and demographics.
+
+Evaluate product performance across categories and subcategories.
+
+Compare sales and returns by country and territory.
+
+Measure operational metrics such as Lead Time (LTD).
+
+## Dataset
+
+The project uses multiple CSV files from the AdventureWorks dataset, including:
+
+Fact Tables
+
+FACT_Sales
+
+FACT_Returns
+
+Dimension Tables
+
+DIM_Calendar
+
+DIM_Customer
+
+DIM_Product
+
+DIM_Territory
+
+The data model is designed using a Star Schema to ensure optimal performance and accurate filtering.
+
+## Data Model
+
+One-to-many relationships between dimension tables and fact tables.
+
+Separate fact tables for Sales and Returns.
+
+Centralized _Measure table for all DAX measures.
+
+Calendar table used for time intelligence (Year, Quarter, Month).
+
+## Key Measures (DAX)
+
+Some of the key measures implemented in this project include:
+
+Total Sales
+
+Total Quantity
+
+Total Returns ($ & Quantity)
+
+Active Customers
+
+Activation %
+
+Average / Min / Max Lead Time (LTD)
+
+Min / Max / Avg Product Price
+
+Total Customers
+
+Total Products
+
+Number of Territories
+
+# Dashboard Pages
+# Home Page
+
+Navigation buttons to all report pages.
+
+Clean UI with Amazon-inspired design.
+
+# Overview
+
+Total Sales, Total Returns, Total Customers.
+
+Sales trend by month.
+
+Sales distribution by gender.
+
+Order quantity by category.
+
+Sales by product color and country.
+
+# Customer Analysis
+
+Active vs total customers.
+
+Customer activation percentage.
+
+Sales by gender.
+
+Customer distribution by:
+
+Education Level
+
+Occupation
+
+Income Level
+
+Home Ownership
+
+Number of Children
+
+# Product Analysis
+
+Total products.
+
+Min / Max / Average product price.
+
+Sales contribution by category & subcategory.
+
+Top products by total sales.
+
+# Territory Analysis
+
+Number of territories.
+
+Min / Max / Avg Lead Time per country.
+
+Sales and returns by country.
+
+Geographic sales visualization (Map).
+
+# Sales & Returns
+
+Total sales & quantities.
+
+Total returns & return quantities.
+
+Sales by category.
+
+Sold vs returned quantities by income level.
+
+Monthly comparison of sales vs returns.
+
+Top 10 products by sales.
+
+# Tools & Technologies
+
+Power BI Desktop
+
+DAX
+
+CSV Files
+
+Star Schema Data Modeling
