@@ -1,0 +1,139 @@
+# Maven Market Power BI Dashboard
+
+##  Project Overview
+This project presents an interactive **Power BI dashboard** for analyzing sales, customers, products, and returns data for **Maven Market**.  
+The dashboard is designed to support **data-driven decision making** by providing clear KPIs, trends, and segmentation insights.
+
+---
+
+## Business Objectives
+- Monitor overall **Revenue, Profit, Margin %, and Return Rate %**
+- Analyze **product performance** and identify high-return products
+- Understand **customer behavior and segmentation**
+- Track **returns trends** and detect geographic hotspots
+- Enable decision-makers to filter insights dynamically by time and location
+
+---
+
+##  Dashboard Pages
+
+###  Home Page
+- Navigation hub for all report sections
+- Clean and user-friendly layout for easy exploration
+
+---
+
+###  Overview
+**KPIs:**
+- Revenue  
+- Profit  
+- Margin %  
+- Return Rate %
+
+**Visuals:**
+- Revenue by city and country (Map)
+- Profit trend by month
+- Global performance snapshot
+
+---
+
+###  Products
+**KPIs & Insights:**
+- Top Product by Revenue
+- Margin %
+
+**Visuals:**
+- Revenue by product brand and product name (Treemap)
+- Return rate % by product
+- Product-level revenue, profit, and margin matrix
+- Identification of **high-return products**
+
+---
+
+###  Customers
+**KPIs:**
+- Total Customers
+- Average Revenue per Customer
+- Count of Homeowners
+- Count of Non-Homeowners
+
+**Visuals:**
+- Top 10 customers by revenue
+- Customer distribution by homeowner status
+- Customer segmentation by:
+  - Education level
+  - Gender
+  - Member card type
+- Customer filters by country and gender
+
+---
+
+### Returns
+**KPIs:**
+- Return Rate %
+- Returns Count
+- Total Returned Quantity
+- High Return Products Count
+
+**Visuals:**
+- Return rate % trend by month
+- Return hotspots by store city and country (Map)
+- Store-level return analysis
+
+---
+
+##  Data Model
+The report follows a **Star Schema** design:
+
+### Fact Tables
+- **Transactions**
+- **Returns**
+
+### Dimension Tables
+- Customers
+- Products
+- Stores
+- Regions
+- Calendar
+
+This structure ensures:
+- High performance
+- Clean relationships
+- Accurate aggregations
+
+---
+
+##  Data Sources
+The analysis is based on CSV files including:
+- Customers
+- Products
+- Stores
+- Regions
+- Transactions (1997–1998)
+- Returns
+- Calendar
+
+(All files are included in the repository)
+
+---
+
+##  Tools & Technologies
+- **Power BI Desktop**
+- **DAX** for calculated measures and KPIs
+- **Power Query** for data cleaning and transformation
+- **Star Schema Modeling**
+- Interactive slicers and drill-down visuals
+
+---
+
+##  Key Skills Demonstrated
+- Data modeling (Star Schema)
+- KPI design and business metrics
+- Advanced DAX measures
+- Interactive dashboard design
+- Data storytelling
+- Retail & sales analytics
+
+
+
+
